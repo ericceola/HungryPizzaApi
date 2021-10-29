@@ -25,7 +25,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HungryPizza.Infra.Data", "H
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - UnitTest", "5 - UnitTest", "{D01E4A15-EEB7-4FDF-B888-146D9C3AE30B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HungryPizzaTest", "HungryPizzaTest\HungryPizzaTest.csproj", "{056A0DA8-79D4-4A4A-A4A7-C61A1D9B4F5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HungryPizzaTest", "HungryPizzaTest\HungryPizzaTest.csproj", "{056A0DA8-79D4-4A4A-A4A7-C61A1D9B4F5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 -DataBase", "6 -DataBase", "{DAAF0C68-41BA-4A70-8AD3-D10B78D4D5B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{81F6706B-4039-441D-84A0-5F18508D46E9}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\Script\SCRIPT_CREATE_HUNGRYDB.sql = ..\..\..\Desktop\Script\SCRIPT_CREATE_HUNGRYDB.sql
+		..\..\..\Desktop\Script\SP_CUSTOMER_ADDRESS_INSERT.sql = ..\..\..\Desktop\Script\SP_CUSTOMER_ADDRESS_INSERT.sql
+		..\..\..\Desktop\Script\SP_CUSTOMER_CONSULT_ADDRESS_CUSTOMERID.sql = ..\..\..\Desktop\Script\SP_CUSTOMER_CONSULT_ADDRESS_CUSTOMERID.sql
+		..\..\..\Desktop\Script\SP_CUSTOMER_CONSULT_CPF.sql = ..\..\..\Desktop\Script\SP_CUSTOMER_CONSULT_CPF.sql
+		..\..\..\Desktop\Script\SP_CUSTOMER_CONSULT_ID.sql = ..\..\..\Desktop\Script\SP_CUSTOMER_CONSULT_ID.sql
+		..\..\..\Desktop\Script\SP_CUSTOMER_INSERT.sql = ..\..\..\Desktop\Script\SP_CUSTOMER_INSERT.sql
+		..\..\..\Desktop\Script\SP_CUSTOMER_ORDER_INSERT.sql = ..\..\..\Desktop\Script\SP_CUSTOMER_ORDER_INSERT.sql
+		..\..\..\Desktop\Script\SP_ORDER_ITEM_INSERT.sql = ..\..\..\Desktop\Script\SP_ORDER_ITEM_INSERT.sql
+		..\..\..\Desktop\Script\SP_ORDER_LIST.sql = ..\..\..\Desktop\Script\SP_ORDER_LIST.sql
+		..\..\..\Desktop\Script\SP_PRODUCT_CARGA.sql = ..\..\..\Desktop\Script\SP_PRODUCT_CARGA.sql
+		..\..\..\Desktop\Script\SP_PRODUCT_INSERT.sql = ..\..\..\Desktop\Script\SP_PRODUCT_INSERT.sql
+		..\..\..\Desktop\Script\SP_PRODUCT_LIST_CONSULT.sql = ..\..\..\Desktop\Script\SP_PRODUCT_LIST_CONSULT.sql
+		..\..\..\Desktop\Script\SP_PRODUCT_ORDER_ITEM.sql = ..\..\..\Desktop\Script\SP_PRODUCT_ORDER_ITEM.sql
+		..\..\..\Desktop\Script\SP_PRODUCT_ORDER_ITEM_LIST.sql = ..\..\..\Desktop\Script\SP_PRODUCT_ORDER_ITEM_LIST.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +85,7 @@ Global
 		{A846A410-1659-4A47-938F-AC61B5243CF8} = {7D5FB6ED-C2F2-460B-A1EB-5B5C3F272655}
 		{77B53D16-47C3-49A4-9934-CA817BBF652F} = {C30AC607-F171-43CC-84BA-31AF86D5DD22}
 		{056A0DA8-79D4-4A4A-A4A7-C61A1D9B4F5A} = {D01E4A15-EEB7-4FDF-B888-146D9C3AE30B}
+		{81F6706B-4039-441D-84A0-5F18508D46E9} = {DAAF0C68-41BA-4A70-8AD3-D10B78D4D5B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {436E7B2F-B8F5-410F-9322-AC97907B8AAC}
