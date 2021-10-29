@@ -122,7 +122,7 @@ namespace HungryPizzaTest.Service
 
             _productService = new ProductService(mockProductRepository.Object, mapper);
 
-            IEnumerable<Product> teste = await _productService.ListAsync();
+            IEnumerable<ProductListResponse> teste = await _productService.ListAsync();
 
             Assert.NotNull(teste);
 

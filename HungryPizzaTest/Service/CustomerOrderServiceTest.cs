@@ -19,7 +19,7 @@ namespace HungryPizzaTest.Service
    
     public class CustomerOrderServiceTest
     {
-        ICustomerOrderService _customerOrderService;
+       
 
         [Fact]
        public async Task CustomerOrderRegister()
