@@ -3,6 +3,7 @@ using HungryPizza.Domain.Entities;
 using HungryPizza.Domain.Interfaces;
 using HungryPizza.Domain.Request;
 using HungryPizza.Domain.Response;
+using System;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -28,6 +29,7 @@ namespace HungryPizza.Service.Service
             var exists = _customerRepository.CustomerExists(cpf);
             if (exists == null)
             {
+                customer.DateCreate = DateTime.Now;
                 int customerId = await _customerRepository.InsertAsync(customer);
                
                 customerResponse.CustomerId = customerId;

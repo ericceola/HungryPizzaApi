@@ -7,7 +7,6 @@
   <ItemGroup>
     <Compile Remove="Entities\ProductItem.cs" />
     <Compile Remove="Interfaces\IService\IOrderItemService.cs" />
-    <Compile Remove="Mapper\OrderItemProfile.cs" />
   </ItemGroup>
 
   <ItemGroup>

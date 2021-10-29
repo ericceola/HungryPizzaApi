@@ -25,7 +25,7 @@ namespace HungryPizza.Infra.Data.Repository
 
                 DateTime dateCreate = DateTime.Now;
 
-                var parameters = new { customer.CustomerName, customer.Cpf, customer.ContactPhone };
+                var parameters = new { customer.CustomerName, customer.Cpf, customer.ContactPhone, customer.DateCreate };
 
                 id = await connection.ExecuteScalarAsync<int>(spInsert, parameters, commandType: CommandType.StoredProcedure);
                 if (connection.State == System.Data.ConnectionState.Open) connection.Close();
