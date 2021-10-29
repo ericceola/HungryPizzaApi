@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Service\OrderItemService.cs" />
+    <Compile Remove="Service\OrderService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HungryPizza.Domain\HungryPizza.Domain.csproj" />
+    <ProjectReference Include="..\HungryPizza.Infra.Data\HungryPizza.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
