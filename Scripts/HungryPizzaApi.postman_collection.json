@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "ec3649f8-90c6-45c1-9f61-45d2d975e75a",
+		"name": "HungryPizzaApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CustomerCreate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerId\": 0,\r\n  \"customerName\": \"Eric Ceola\",\r\n  \"cpf\": \"27416371805\",\r\n  \"contactPhone\": \"(11)98388-8983\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/customer/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"customer",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/product/list",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"product",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductCreate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productId\": 0,\r\n  \"productName\": \"Muçarela\",\r\n  \"productDescription\": \"4 queijos com  massa Pan\",\r\n  \"price\": 60.00,\r\n  \"imageUrl\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/product/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"product",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerSelect",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/customer/register?customerId=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"customer",
+						"register"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerAddressCreate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerAddressId\": 0,\r\n  \"customerId\": 1,\r\n  \"street\": \"Rua Regente Feijó\",\r\n  \"number\": \"12\",\r\n  \"complement\": \"apto 03\",\r\n  \"district\": \"Vila Assunção\",\r\n  \"city\": \"Santo André\",\r\n  \"regionState\": \"SP\",\r\n  \"zipCode\": \"09030-000\",\r\n  \"surname\": \"Apartamento\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/CustomerAddress/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"CustomerAddress",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerOrder - Cadastrado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderId\": 0,\r\n  \"customerId\": 1,\r\n  \"orderItens\": [{\r\n\t\t\t\t\"productId\": 9,\r\n\t\t\t\t\"halfProductId\": 6,\r\n\t\t\t\t\"quantity\":2\r\n\t\t\t  },\r\n              {\r\n\t\t\t\t\"productId\": 1,\r\n\t\t\t\t\"halfProductId\": 5,\r\n\t\t\t\t\"quantity\": 1\r\n\t\t\t  }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Order/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Order",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerOrder - Não Cadastrado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderId\": 0,\r\n  \"customerId\": null,\r\n  \"customerName\": \"João Pedro\",\r\n  \"street\":\"Rua Figueiras\",\r\n  \"number\": \"22\",\r\n  \"complement\": \"Apartamento 40\",\r\n  \"district\": \"Bairro Jardim\",\r\n  \"city\": \"Santo André\",\r\n  \"RegionState\": \"SP\",\r\n  \"zipCode\": \"09080-300\",\r\n  \"contactPhone\": \"94595-9078\",\r\n  \"orderItens\": [{\r\n\t\t\t\t\"productId\": 1,\r\n\t\t\t\t\"halfProductId\": 0,\r\n\t\t\t\t\"quantity\":1\r\n\t\t\t  },\r\n              {\r\n\t\t\t\t\"productId\": 3,\r\n\t\t\t\t\"halfProductId\": 0,\r\n\t\t\t\t\"quantity\": 1\r\n\t\t\t  },\r\n               {\r\n\t\t\t\t\"productId\": 9,\r\n\t\t\t\t\"halfProductId\": 0,\r\n\t\t\t\t\"quantity\": 1\r\n\t\t\t  }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Order/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Order",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MyOrders - Paginação",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/customer/myorders?customerId=1&page=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"customer",
+						"myorders"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "1"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
