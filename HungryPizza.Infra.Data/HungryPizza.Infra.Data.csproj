@@ -13,4 +13,13 @@
     <ProjectReference Include="..\HungryPizza.Domain\HungryPizza.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="DB\HungryPizzaDb.mdf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="DB\HungryPizzaDb_log.ldf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

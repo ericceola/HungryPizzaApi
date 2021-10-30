@@ -30,6 +30,9 @@ namespace HungryPizza.Api
         {
             services.AddCors();
             services.AddControllers();
+
+            DBConfiguration.PathDbMdf(true);
+
             DBConfiguration.ConnectionString = Configuration.GetConnectionString("myConnection");
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
